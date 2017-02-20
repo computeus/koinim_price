@@ -19,7 +19,6 @@ module KoinimPrice
       true
     end
 
-    private
     def self.response
       @response ||= JSON.parse(HTTParty.get(API_URL).body)
     end
